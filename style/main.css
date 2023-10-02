@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* ШАПКА */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1322px;
+    height: 91px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    gap: 21px;
+}
+
+li {
+    list-style-type: none;
+
+    & a {
+        color: var(--second-text-color, #737373);
+
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.2px;
+    }
+}
+
+.logo {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.1px;
+}
+
+.auth {
+    display: flex;
+    gap: 45px;
+
+    & button:first-child {
+        color: var(--primary-color, #96BB7C);
+        text-align: right;
+        
+        /* btn-text */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.2px;
+    }
+
+    & button:last-child {
+        color: var(--light-text-color, #FFF);
+
+        /* btn-text */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.2px;  
+
+        border-radius: 5px;
+        background: var(--primary-color, #96BB7C);
+
+        padding: 15px 25px;
+    }
+}
+
