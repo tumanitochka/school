@@ -21,6 +21,41 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+h1 {
+    font-family: Montserrat;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px; /* 137.931% */
+    letter-spacing: 0.2px;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+}
+
+h5 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.green {
+    color: #96BB7C;
+}
+
+.second {
+    color: #737373;
+}
+
 /* ШАПКА */
 
 header {
@@ -61,6 +96,11 @@ li {
     letter-spacing: 0.1px;
 }
 
+.nav {
+    position: relative;
+    right: 110px;
+}
+
 .auth {
     display: flex;
     gap: 45px;
@@ -96,3 +136,75 @@ li {
     }
 }
 
+.block1 {
+    background: #F6FAFF;
+    border-radius: 0 0 0 50px;
+    width: 703px;
+    height: 543.786px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.block2 {
+    background: #EFF8ED;
+    border-radius: 0 50px 50px 0;
+    width: 1220px;
+    height: 617px;
+}
+
+main {
+    margin-top: -617px;
+}
+
+.firstScreen {
+    display: flex;
+    width: 1046px;
+    margin: 0 auto;
+}
+
+.firstLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 80px;
+}
+
+.firstButton {
+    display: flex;
+    gap: 10px;
+}
+
+.firstButton button:first-child {
+    border-radius: 5px;
+    background: var(--primary-color, #96BB7C);
+    padding: 15px 40px;
+
+    color: var(--light-text-color, #FFF);
+    text-align: center;
+    /* btn-text */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: 0.2px;
+}
+
+.firstButton button:last-child {
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color, #96BB7C);
+
+    color: var(--primary-color, #96BB7C);
+    text-align: center;
+    
+    /* btn-text */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: 0.2px;
+}
